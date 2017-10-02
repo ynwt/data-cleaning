@@ -22,7 +22,9 @@ label_features <- label_features %>%
   mutate (featureName = gsub(",", "", featureName)) %>%
   mutate (featureName = gsub("-", "", featureName)) %>%
   mutate (featureName = gsub("\\s+", "", featureName)) %>%
-  mutate (featureName = gsub("[-()]", "", featureName))
+  mutate (featureName = gsub("[-()]", "", featureName)) %>%
+  mutate (featureName = tolower(featureName))
+  
 
 label_activities = read.table("./Data/activity_labels.txt")
 colnames(label_activities) <- c("activityId", "activityName")
