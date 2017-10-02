@@ -1,6 +1,15 @@
 
 Data has 180 obs. of  88 variables.
-** for detail description of the variables kindly refer to features_info.txt from source of data.
+subjectId - respective subject code from subject data.
+activityName - respective activity from activity data.
+  1 WALKING
+  2 WALKING_UPSTAIRS
+  3 WALKING_DOWNSTAIRS
+  4 SITTING
+  5 STANDING
+  6 LAYING
+
+** the rest of the measures are the average value in the group of same subject and activity: detail description of the variables kindly refer to features_info.txt from source of data.
 
 subjectId                        : int  1 1 1 1 1 1 2 2 2 2 ...
 activityName                     : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
